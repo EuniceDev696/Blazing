@@ -52,7 +52,9 @@ h2 {
 h1 {
   font-size: 28px;
   color: #1a3d69;
-  cursor: color black;
+}
+h1:hover {
+  color: black;
 }
 .Lists {
   list-style-type: none;
@@ -97,6 +99,9 @@ span {
   color: rgb(43, 42, 42);
   word-spacing: 10px;
 }
+span a :hover {
+  color: black;
+}
 .button_2 {
   margin-top: -110px;
   cursor: pointer;
@@ -119,9 +124,32 @@ span {
   gap: 15px;
   padding: 25px;
   color: rgb(24, 24, 24);
+  border: 1px solid white;
   border-bottom: 1px solid rgb(94, 91, 91);
 }
+.plansb {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 25px;
+  color: rgb(24, 24, 24);
+  border: 1px solid white;
+}
+.plans :hover {
+  opacity: 0.2;
+  background-color: rgb(86, 83, 83);
+}
+.plansb :hover {
+  opacity: 0.2;
+  background-color: rgb(210, 200, 200);
+}
 .plans img {
+  height: 110px;
+  width: 100px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.plansb img {
   height: 110px;
   width: 100px;
   border: 2px solid white;
@@ -143,7 +171,19 @@ span {
   font-size: large;
   color: rgb(41, 39, 39);
 }
+.plansb p {
+  margin-top: 3px;
+  font-size: large;
+  color: rgb(41, 39, 39);
+}
 .plans a {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  opacity: 1;
+  color: black;
+}
+.plansb a {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -158,13 +198,16 @@ span {
   display: flex;
   flex-direction: row;
   height: 150px;
-  width: 750px;
+  width: 650px;
   border: 1px solid white;
   background-color: white;
-  justify-content: center;
-  align-content: center;
+  font-size: large;
+  gap: 20px;
+  padding: 10px 40px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
 }
 footer {
   padding: 10px 85px;
-  font-size: 20px;
 }
